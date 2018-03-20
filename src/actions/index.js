@@ -8,6 +8,6 @@ export function selectBook(book) {
     un objeto con un un tipo de propiedad*/
     return {
         type: 'BOOK_SELECTED',
-        paylod: book
+        payload: book
     };
 }

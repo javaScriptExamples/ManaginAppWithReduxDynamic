@@ -19,6 +19,7 @@ class BookList extends Component {
                 <li
                     key={book.title}
                     onClick={() => this.props.selectBook(book)}
+                    
                     className="List-group-item">
                     {book.title}
                 </li>
@@ -32,7 +33,7 @@ class BookList extends Component {
             <ul className="list-group col-sm-4">
                 {this.renderList()}
             </ul>
-        );
+        )
     }
 
 }
@@ -45,7 +46,7 @@ function mapStateToProps(state) {
         //esta es la conexion entre redux y nuestro component
         books: state.books
     };
-};
+}
 
 /*cualquier cosa que se regrese por esta funcion terminara como props en el BookList container*/
 function mapDispatchToProps(dispatch) {

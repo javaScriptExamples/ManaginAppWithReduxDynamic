@@ -5,12 +5,12 @@
 
 export default function (state = null, action) {
     switch (action.type) {
+        
         case 'BOOK_SELECTED': 
             //si un libro es seleccionado, se pasa el estado al action.payload
             return action.payload;
-    
-      
     }
       //si nada se selecciona se regresa el estado anterior, osea el libro anterior
     return state;
+    
 }
